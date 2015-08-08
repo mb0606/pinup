@@ -48,6 +48,11 @@ class PinsController < ApplicationController
 		@pin.upvote_by current_user
 		redirect_to :back
 	end 
+	def downvote
+		@pin.upvote_by current_user
+		redirect_to :back
+	end 
+
 
 	
 
